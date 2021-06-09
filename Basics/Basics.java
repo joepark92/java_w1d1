@@ -31,7 +31,7 @@ public class Basics {
     }
 
     public int findMax(int[] array) {
-        int max = 0;
+        int max = array[0];
         for (int i : array) {
             if (max < i) {
                 max = i;
@@ -85,8 +85,8 @@ public class Basics {
         double sum = 0;
 
         for (int i : array) {
-            if (max < i) {
-                max = i;
+            if (max < i) {  // array[0] < array[1]
+                max = i;  // array[1]
             }
             if (min > i) {
                 min = i;
